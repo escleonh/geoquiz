@@ -20,7 +20,20 @@
         <div id="container">
             
                 <h2 id="title">Test your knoledge about countries' capitals</h2>
-                <button id="startBtn">Start</button>
+                <form action="" id="regionForm" onsubmit="displayQuestion()">
+                <label id="lRegion">Select a region:
+                <select id="region" name='region' required>
+                    <option value="" selected  disabled>Region</option>
+                    <option value="all">All Countries</option>
+                    <option value="Americas">America</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Asia</option>
+                    <option value="Africa">Africa</option>
+                </select>
+            </label>
+            <button id="startBtn">Start</button>
+            </form>
+            
            
         </div >  
         </div>
@@ -28,14 +41,15 @@
         <div id="modal">
             <div id="modalContent">
                 <h3>Results</h3>
+                <p id="results"></p>
                 <button id="closeBtn" >Close</button>
             </div>
         </div>
 
     </main>
 
-    <footer>
-    </footer>
+    <!-- <footer>
+    </footer> -->
 
     <script src="app.js"></script>
 </body>
