@@ -42,6 +42,7 @@ function choicesGenerator(data, answerIndex){
         }
         else{
         choicesObj.allOptions.push(data[randomChoiceIndex].capital);
+        console.log(data[randomChoiceIndex].name);
         }
     }
 
@@ -49,6 +50,7 @@ function choicesGenerator(data, answerIndex){
     
     //shuffles otpions array
     choicesObj.allOptions.sort(() => Math.random() - 0.5);
+
 
     html = "<div id='options' ><input type='radio' id='option1' name='option' value='"+choicesObj.allOptions[0] +"'>"+
     "<label for='option2'>"+choicesObj.allOptions[0] +"</label><br>"+
@@ -65,9 +67,9 @@ function choicesGenerator(data, answerIndex){
 function questionGenerator(data,countryIndex){
     console.log(data[countryIndex].capital);
     //HTML code to create the question
-    let question = "<h3>What is the capital of "+ data[countryIndex]['name']+ "</h3>"+
+    let question = "<div id='question'><h3>What is the capital of "+ data[countryIndex]['name']+ "</h3>"+
     choicesGenerator(data, countryIndex) +
-    "<button id='nextBtn'>Next Question </button>";
+    "</div><button id='nextBtn'>Next Question </button>";
 
     return question;
 }
@@ -80,7 +82,7 @@ function displayQuestion(){
     let selectedRegion = regionForm.region.value;
 
     if(selectedRegion=='all')
-        selectedRegion = "v2/all";
+        selectedRegion = "all";
     else
         selectedRegion= 'region/'+selectedRegion;
     //Empty container
