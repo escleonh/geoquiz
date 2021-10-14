@@ -26,7 +26,7 @@ function completionMsg(totalQuestions){
     questionsDiplayed=[];
     modal.style.display = "grid";
     results.innerHTML = counter +'/'+ totalQuestions;
-    
+    counter=0;
 }
 
 function choicesGenerator(data, answerIndex){
