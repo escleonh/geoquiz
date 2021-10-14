@@ -91,7 +91,7 @@ function displayQuestion(){
     // startMsg.style.display='none';
     
 
-    fetch("https://restcountries.com/v3.1/region/"+selectedRegion)
+    fetch("https://restcountries.com/v3.1/"+selectedRegion)
     .then(res => res.json())
     .then(data => 
     { 
