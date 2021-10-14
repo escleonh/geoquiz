@@ -120,7 +120,7 @@ function displayQuestion(){
 
         choicesObj.allOptions =[];
         });
-    }).catch((err)=>console.log(err);
+    }).catch((err)=>console.log(err));
 }
 
 closeModalBtn.addEventListener('click', function(){
