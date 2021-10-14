@@ -16,7 +16,7 @@ const choicesObj = {
 };
 let counter = 0;
 // const nextBtn = document.getElementById('nextBtn');
-window.document.onload =()=>{alert("Website is not currently not functioning properly due to API changes. I will update it as soon as possible. Thanks 10/14/21");};
+window.document.onload =()=>{alert("Website is not currently not functioning properly due to API changes. Questions are generated but result will not be accurate. I will update it as soon as possible. Thanks 10/14/21");};
     
 
 function generateRandomNumber(max){
