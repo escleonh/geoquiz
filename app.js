@@ -67,7 +67,7 @@ function choicesGenerator(data, answerIndex){
 function questionGenerator(data,countryIndex){
     console.log(data[countryIndex].capital);
     //HTML code to create the question
-    let question = "<div id='question'><h3>What is the capital of "+ data[countryIndex]['name']+ "</h3>"+
+    let question = "<div id='question'><h3>What is the capital of "+ data[countryIndex]['name']['official']+ "</h3>"+
     choicesGenerator(data, countryIndex) +
     "</div><button id='nextBtn'>Next Question </button>";
 
