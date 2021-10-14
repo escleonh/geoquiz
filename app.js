@@ -17,6 +17,7 @@ const choicesObj = {
 let counter = 0;
 // const nextBtn = document.getElementById('nextBtn');
 
+    alert("Website is not currently not functioning properly due to API changes. I will update it as soon as possible. Thanks 10/14/21");
 
 function generateRandomNumber(max){
     return Math.floor(Math.random()*max);
@@ -76,7 +77,6 @@ function questionGenerator(data,countryIndex){
 
 function displayQuestion(){
     event.preventDefault();
-    alert("Website is not currently not functioning properly due to API changes. I will update it as soon as possible. Thanks 10/14/21");
      //random number to retrieve a random country
     let countryIndex = generateRandomNumber(5);
      
